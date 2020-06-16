@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小鸟</title>
+    <!-- vscode小技巧 shift + alt + ↓是快速复制当前行到下一行 Ctrl + Shift + K 快速删除-->
+    <!-- 这是我的个人连接 -->
+    <link rel="shortcut icon" href="https://edu-adger.oss-cn-beijing.aliyuncs.com/2020/06/13/0cc9dce609734965bc78459bf87894c8icon.jpg" type="image/x-icon">
+    <!-- 引入assets其中的文件 assets文件夹是集中式管理文件 -->
+    <!-- 初始化样式文件 -->
+    <link rel="stylesheet" href="assets/reset.css">
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="assets/index.css">
+</head>
+<body>
+    <!-- 开始划区域 最大的是游戏背景图 第一个为最大选择 id选择器 -->
+    <div id="game-background">
+        <!-- 这是放置小鸟的区域 -->
+        <div class="bird"></div>
+        <!-- 这是点击开始游戏的区域 里面包含了 柱子等 其中这个字体有两种样式 一种白色 一种蓝色-->
+        <div class="start start-blue">点击开始</div>
+        <!-- 放置分数的区域 -->
+        <div class="score">0</div>
+        <!-- 蒙层 -->
+        <div class="mask"></div>
+        <!-- 结束之后出现的页面 -->
+        <div class="end">
+            <div class="over">游戏结束</div>
+            <div class="result">你的结果</div>
+            <div class="fina-scroe">0</div>
+            <!-- 排名列表 -->
+            <ul class="rank-list">
+                <li class="rank-item">
+                    <span class="rank-degree first">1</span>
+                    <span class="rank-scroe">25</span>
+                    <span class="rank-time">2020.06.15 20:49:06</span>
+                </li>
+            </ul>
+            <ul class="rank-list">
+                <li class="rank-item">
+                    <span class="rank-degree second">1</span>
+                    <span class="rank-scroe">25</span>
+                    <span class="rank-time">2020.06.15 20:49:06</span>
+                </li>
+            </ul>
+            <ul class="rank-list">
+                <li class="rank-item">
+                    <span class="rank-degree third">1</span>
+                    <span class="rank-scroe">25</span>
+                    <span class="rank-time">2020.06.15 20:49:06</span>
+                </li>
+            </ul>
+            <!-- 重新开始 -->
+            <div class="restart">重新开始</div>
+        </div>
+    </div>
+</body>
+</html>
