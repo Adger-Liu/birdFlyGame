@@ -23,6 +23,9 @@
 	height: 30px;
 	/* 因为这个小鸟是动的 有三个状态  */
 	background-image: url('../images/birds.png');
+	/* all 是所有元素发生改变的时候都有这个效果 在300毫秒之内完成 匀速完成*/
+	/* transition: all .3s linear; */
+	transition: top .3s linear;
 }
 .start{
 	position: absolute;	
@@ -34,6 +37,8 @@
 	line-height: 60px;
 	font-weight: bolder;
 	text-align: center;
+	transition: all .3s linear;
+	cursor: pointer;
 }
 .start.start-white{
 	color: white;
@@ -52,6 +57,8 @@
 	font-size: 24px;
 	color: blue;
 	font-weight: bolder;
+	/* 分数是点击开始的时候才有的 */
+	display: none;
 }
 /* 蒙层 由于mask没有自己的宽度 都没像素就会自动称大*/
 .mask{
@@ -62,6 +69,8 @@
 	right: 0;
 	background-color: #000;
 	opacity: .7;
+	/* 蒙层是游戏接受后才有的 */
+	display: none;
 }
 .end{
 	position: absolute;
@@ -71,6 +80,8 @@
 	z-index: 2;
 	color: red;
 	text-align: center;
+	/* 分数也是游戏结束后才有的 */
+	display: none;
 }
 .end .over{
 	font-size: 35px;
