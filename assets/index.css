@@ -10,6 +10,7 @@
 	position: relative;
 	width: 100%;
 	height: 600px;
+	/* height: 100%; */
 	background-image: url('../images/sky.png');
 }
 /* 因为这个小鸟需要在中间去 所以需要移动位置 用到了定位 口诀：父相子绝 */
