@@ -71,6 +71,7 @@
 	opacity: .7;
 	/* 蒙层是游戏接受后才有的 */
 	display: none;
+	z-index: 2;
 }
 .end{
 	position: absolute;
@@ -82,6 +83,7 @@
 	text-align: center;
 	/* 分数也是游戏结束后才有的 */
 	display: none;
+	z-index: 3;
 }
 .end .over{
 	font-size: 35px;
@@ -133,4 +135,27 @@
 	font-size: 18px;
 	font-weight: bolder;
 	cursor: pointer;
+}
+/* 柱子的类名 */
+.pipe{
+	/* 定位 */
+	position: absolute;
+	/* left不能写死 需要用js动态实现 */
+	/* left: 300px; */
+	width: 52px;
+	height: 150px;
+	/* background-color: red; */
+	/* 柱子在分数蒙层后面 */
+	z-index: 1;
+}
+/* 不同的类名设置不同的样式 一个上柱子 一个下柱子 */
+.pipe.pipe-up{
+	top: 0;
+	background-image: url("../images/pipe2.png");
+	background-position-y: bottom;
+}
+.pipe.pipe-bottom{
+	bottom: 0;
+	/* 下面的柱子 */
+	background-image: url("../images/pipe1.png");
 }
